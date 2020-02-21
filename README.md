@@ -1,10 +1,8 @@
-# Modified
-
 <p align="center">
 <img src="https://i.loli.net/2017/09/07/59b1367f76fdb.png" alt="Material Render Phone">
 </p>
 
-<h1 align="center"><a href="https://material.viosey.com" target="_blank">Material Theme</a></h1>
+<h1 align="center"><a href="https://material.viosey.com" target="_blank">Material Theme (Modified)</a></h1>
 
 > Nature, Pure | 原质，纯粹
 
