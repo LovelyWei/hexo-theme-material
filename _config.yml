@@ -4,9 +4,9 @@
 
 # Head info
 head:
-    favicon: "/img/favicon.png"
-    high_res_favicon: "/img/favicon.png"
-    apple_touch_icon: "/img/favicon.png"
+    favicon: "/img/avatar.jpg"
+    high_res_favicon: "/img/avatar.jpg"
+    apple_touch_icon: "/img/avatar.jpg"
     keywords:
     site_verification:
         google:
@@ -18,7 +18,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss:
+    rss: "/atom.xml"
     daily_pic: "#"
     logo: "#"
 
@@ -28,12 +28,14 @@ url:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Paradox
+scheme: Isolation
 #scheme: Isolation
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: 
+        - A Noob.
+        - (交换友链希望.
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -71,7 +73,7 @@ background:
 # Images Settings
 img:
     logo: "/img/logo.png"
-    avatar: "/img/avatar.png"
+    avatar: "/img/avatar.jpg"
     daily_pic: "/img/daily_pic.png"
     sidebar_header: "/img/sidebar_header.png"
     random_thumbnail: "/img/random/material-"
@@ -122,8 +124,8 @@ qrcode:
 #    Prettify
 #        theme: # Available value in /source/css/prettify/[theme].min.css
 prettify:
-    enable: false
-    theme: "github-v2"
+    enable: true
+    theme: "tomorrow-night-eighties"
 
 #    Hanabi (https://github.com/egoist/hanabi)
 #        line_number: [true/false] # Show line number for code block
@@ -133,8 +135,8 @@ prettify:
 #                    - If `includeDefaultColors` is false, this will instead default color pool
 hanabi:
     enable: false
-    line_number: true
-    includeDefaultColors: true
+    line_number: false
+    includeDefaultColors: false
     customColors: 
 
 # Post License
@@ -142,7 +144,7 @@ hanabi:
 #   For example, you can setup a CC license as:
 #       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 # You can also use Front-Matter `license` to override this setting.
-license: 
+license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -157,10 +159,10 @@ toc:
 
 # SNS Menu
 sns:
-    email: youremail@email.com
-    facebook: "https://www.facebook.com/facebook"
-    twitter: "https://twitter.com/twitter"
-    googleplus: "https://www.google.com/"
+    email: 
+    facebook: 
+    twitter: 
+    googleplus: 
     weibo:
     instagram:
     tumblr:
@@ -168,15 +170,15 @@ sns:
     linkedin:
     zhihu:
     bilibili:
-    telegram:
+    telegram: "https://t.me/LovelyWei"
     v2ex:
 
 # SNS Share Switch
 sns_share:
-    twitter: true
-    facebook: true
-    googleplus: true
-    weibo: true
+    twitter: false
+    facebook: false
+    googleplus: false
+    weibo: false
     linkedin: false
     qq: false
     telegram: false
@@ -192,7 +194,7 @@ sidebar:
         icon: home
         divider: false
     archives:
-        use: true
+        use: false
         icon: inbox
         divider: false
     categories:
@@ -200,10 +202,18 @@ sidebar:
         icon: chrome_reader_mode
         divider: false
     pages:
-        #About:
-            #link: "/about"
+        #Archives:
+            #link: "/archives"
             #icon: person
             #divider: false
+        Tags:
+            link: "/tags"
+        Friends:
+            link: "/friends"
+        TimeLine:
+            link: "/timeline"
+        About:
+            link: "/about"
     article_num:
         use: false
         divider: false
@@ -225,7 +235,7 @@ sidebar:
 # If you want to use gitment or gitalk,you should get the client_id and client_secret form https://github.com/settings/applications/new
 # If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://valine.js.org
 comment:
-    use: 
+    use: gitalk
     shortname: # duoshuo or disqus shortname
     changyan_appid:
     changyan_conf:
@@ -244,10 +254,10 @@ comment:
     valine_lang: zh-cn # i18n
     valine_placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
     valine_guest_info: nick,mail,link #valine comment header info
-    gitalk_repo: # git repo of the hexo
-    gitalk_owner: # git repo's owner
-    gitalk_client_id: # github app client id 
-    gitalk_client_secret: # github app client secret
+    gitalk_repo: LovelyWei.github.io # git repo of the hexo
+    gitalk_owner: LovelyWei # git repo's owner
+    gitalk_client_id: dda34f7fb2fdd05c451f # github app client id 
+    gitalk_client_secret: 943037abd1cb1327dff02dda54bc9094c464084b # github app client secret
 
 # Search Systems
 # Available value:
@@ -260,7 +270,7 @@ search:
 # Available value:
 #     baidu | google | cnzz
 analytics:
-    google_site_id:
+    google_site_id: UA-120647290-2
     baidu_site_id:
     cnzz_site_id:
 
